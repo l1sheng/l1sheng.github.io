@@ -1,74 +1,189 @@
 <html lang="zh-cn">
  <head>
-     <meta name="viewport" content="width=device-width,initial-scale=1.0" />
-     <meta charset="utf-8">
-     <title>
+    <meta name="viewport" content="width=device-width,initial-scale=1.0" />
+    <meta charset="utf-8">
+    <link href="css/bootstrap.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+    <link href="css/responsive.css" rel="stylesheet">
+    <link rel="shortcut icon" href="images\GOG Galaxy.ico" type="image/x-icon">
+    <link rel="icon" href="images\GOG Galaxy.ico" type="image/x-icon">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+    <title>
          笙
-     </title>
-     <link rel="shortcut icon " href="images/GOG Galaxy.ico" /> 
-     <style>
-         body{
-             text-align:center;
-         }
-         div{
-             padding:5;
-         }
-         h1 {
-             padding: 30px;
-             font-size: 35px;
-             font-family: KaiTi;
-         }
-         .a {
-             font-size: 10px;
-             color: #808080;
-             
-         }
+    </title>
+    <style>
          .b {
-             background-color: #f1f1f1;
-             padding: 5px;
-             margin: 5px;
+            text-align:center;
+            position: relative;
+            top:50px;
+            background-color: #f1f1f1;
+            padding: 5px;
+            margin: 5px;
+            text-align:center;
+
          }
          .c { 
-             line-height: 1.5;
+            text-align:center;
+            position: relative;
+            top:50px;
+            padding: 3px;
+            font-family: KaiTi;
          }
          .d {
-             font-family: FangSong;
-             line-height: 1.5;
-             font-size: 25px
+            position: relative;
+            top:50px;
+            text-align:center;
+            font-family: FangSong;
+            line-height: 1.5;
+            font-size: 25px;
          }
          .e {
-             font-size: 15px;
+            text-align:center;
+            font-size: 15px;
          }
+    </style>
+    <script src="js/jquery.js"></script> 
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/jquery.mCustomScrollbar.concat.min.js"></script>
+    <script src="js/owl.js"></script>
+    <script src="js/wow.js"></script>
+    <script src="js/appear.js"></script>
+    <script src="js/jquery.fancybox.js"></script>
+    <script src="js/element-in-view.js"></script>
+    <script src="js/knob.js"></script>
+    <script src="js/validate.js"></script>
+    <script src="js/mousemoveparallax.js"></script>
+    <script src="js/pagenav.js"></script>
+    <script src="js/jquery-type.js"></script>
+    <script src="js/jquery.nicescroll.min.js"></script>
+    <script src="js/particle-alone.js"></script>
+    <script src="js/script.js"></script>
+    <script src="http://ditu.google.cn/maps/api/js?key=AIzaSyATY4Rxc8jNvDpsK8ZetC7JyN4PFVYGCGM"></script>
+    <script src="js/gmaps.js"></script>
+    <script src="js/map-script.js"></script>
 
-         .c-video {
-             width: 100%;
-             max-width: 800px;
-         }
-         .video{
-             width:100%
-         }
-         
-     </style>
  </head>
 
  <body>
+    <div class="page-wrapper default-version">
+ 	
+    <!-- Preloader -->
+    <div class="preloader"></div>
+    
+    <div class="mobile-menu">
+        <div class="container">
+            <!--Nav Outer-->
+            <div class="nav-outer clearfix">
+                <div class="logo"><a href="index.html"><img src="images/logo.png" alt=""></a></div>
+                <!-- Main Menu -->
+                <nav class="main-menu">
+                    <div class="navbar-header">
+                        <!-- Toggle Button -->      
+                        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                        </button>
+                    </div>
+                    
+                    <div class="navbar-collapse collapse scroll-nav clearfix">
+                        <ul class="navigation clearfix">
+                            <li class="current"><a href="#home">主页</a></li>
+                            <li><a href="#about">关于</a></li>
+                            <!--<li><a href="#resume">经历</a></li>
+                            <li><a href="#services">兴趣</a></li>
+                            <li><a href="#work">作品</a></li>
+                            <li><a href="#blog">合作</a></li>
+                            <li><a href="#contact">联系</a></li>
+                            -->
+                         </ul>
+                    </div>
+                </nav>
+                                 
+            </div>
+        </div>
+    </div>
+    <div class="card-home card-item active" id="home" style="background-image:url(images/background/1.jpg)">
 
-     <div class="b">
-         <img src="images/1 (1).png "
-              alt="笙"
-              width="100px"
-              height="100px" />
-     </div>
-
-     <div class="c">
-         <h1>笙</h1>
-     </div>
-
-     <div class="d">
-         <p>你好，这是我的个人网站</p>
-
-     </div>
-     <div class="e">
+        <div class="card-inner wow fadeInUp" data-wow-duration="2s">
+            
+            <div class="author">
+                <div class="b">
+                    <img src="images/1 (1).png "
+                         alt="笙"
+                         width="100px"
+                         height="100px" 
+                         />
+                </div>
+                
+               
+                <div >
+                    <h1 class="c">笙</h1>
+                </div>
+           
+                <div class="d">
+                    <p>你好，这是我的个人网站</p>
+                </div>
+                <div class="card-inner-box">
+                    <header class="header wow fadeInLeft" data-wow-duration="1.5s">
+                        <ul class="main-menu">
+                            <li class="active home"><a class="logo" href="#home"><img src="images/logo.png" alt=""></a></li>
+                            <li><a href="#about"><i class="flaticon-social"></i>关于</a></li>
+                            <!--<li><a href="#resume"><i class="flaticon-curriculum"></i>经历</a></li>
+                            <li><a href="#services"><i class="flaticon-layers-1"></i>兴趣</a></li>
+                            <li><a href="#work"><i class="flaticon-tools"></i>作品</a></li>
+                            <li><a href="#blog"><i class="flaticon-blog"></i>合作</a></li>
+                            <li><a href="#contact"><i class="flaticon-send-mail"></i>合作</a></li>-->
+                        </ul>
+                    </header>
+                    <div class="card-home card-item active" id="home" >
+                </div>
+        
+    </div>
+     <div class="card-outer">
+        <div class="scroll-box">
+            <div class="container" data-animation-in="fadeInLeft" data-animation-out="fadeOutLeft">
+                    <div class="card-inner-box">
+                        <header class="header wow fadeInLeft" data-wow-duration="1.5s">
+                            <ul class="main-menu">
+                                <li class="active home"><a class="logo" href="#home"><img src="images/logo.png" alt=""></a></li>
+                                <li><a href="#about"><i class="flaticon-social"></i>关于</a></li>
+                                <!--<li><a href="#resume"><i class="flaticon-curriculum"></i>经历</a></li>-->
+                                <!--<li><a href="#services"><i class="flaticon-layers-1"></i>兴趣</a></li>
+                                <li><a href="#work"><i class="flaticon-tools"></i>作品</a></li>
+                                <li><a href="#blog"><i class="flaticon-blog"></i>合作</a></li>
+                                <li><a href="#contact"><i class="flaticon-send-mail"></i>合作</a></li>-->
+                            </ul>
+                        </header>
+                        <div class="card-about card-item" id="about" style="background-image:url(images/background/2.jpg)">
+                            <div class="card-inner">
+                                <h4 class="title">关于我</h4>
+                                <div class="text"></div>
+                                <div class="info-list">
+                                    <div class="row">
+                                        <div class="col-md-6">
+                                            <ul class="list-style-one">
+                                            <li><strong>Name:</strong>暂无</li>
+                                            <li><strong>QQ:</strong>2744932552</li>
+                                            <li><strong>Address:</strong>地球</li>
+                                            </ul>
+                                        </div>
+                                        <div class="col-md-6">
+                                            <ul class="list-style-one">
+                                                <li><strong>Email:</strong>  2744932552@qq.com</li>
+                                                
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>                                    
+                        </div>
+                    </div>    
+                </div>
+            </div>
+        </div>
+        <div class="e">
         <p>
             点击跳转
             <a href="https://www.xiaozhongjishu.com/"
@@ -78,7 +193,6 @@
             </a>
         </p>
     </div>
-     
      <div class="e">
          <p>
              版权所有
@@ -89,10 +203,7 @@
              </a>
          </p>
      </div>
-
-     <div class="a">
-         <p>腾讯云提供计算服务</p>
-     </div>
+     
 
  </body>
 
