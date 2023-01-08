@@ -10,15 +10,41 @@
             text-align:center;
             font-size: 13px;
         }
+        .video-box {
+            padding-bottom: 56.25%;
+            width: 100%;
+            position: relative;
+        }
+
+        .video-box video {
+            width: 100%;
+            height: 100%;
+            position: absolute;
+            top: 0;
+            left: 0;
+            object-fit: cover;
+        }
     </style>
     
  </head>
  <body>
-        <div>
-            <h2 >学习，学习有个P好学的啊！</h2>
-        </div>
-        <div>
-            <p class="ShengMing">&copy; 2023 SHENG</p>
-        </div>
+    <div class="video-box">
+        <a href="https://www.bilibili.com/video/BV1W44y1o7Cu/?spm_id_from=333.1007.tianma.1-1-1.click&vd_source=e2de0cc5b609922c4d721d18da729846">
+            <video width="320" height="240" controls autoplay>
+                <source src="videos\A.mp4" type="video/ogg">
+                <source src="videos\A.mp4" type="video/mp4">
+                <source src="videos\A.mp4" type="video/webm">
+                <object data="videos\A.mp4" width="320" height="240">
+                  <embed width="320" height="240" src="videos\A.mp4">
+                </object>
+            </video>
+        </a>
+    </div>
+    <div>
+        <h2 >学习，学习有个P好学的啊！</h2>
+    </div>
+    <div>
+        <p class="ShengMing">&copy; 2023 SHENG</p>
+    </div>
  </body>
 </html>
