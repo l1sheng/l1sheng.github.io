@@ -11,30 +11,43 @@
     
     <style>
         .ShengMing {
-            text-align:center;
+            text-align: center;
             font-size: 13px;
+            display: flex;
+            flex-direction: column;
         }
 
         .video-box {
-            height: auto;
-            width: auto;
-        }
-
-        .video-box video {
             position: relative;
             top: -30px;
-            left: 10px;
-            right: 10px;
-            object-fit: cover;
-        } 
+        }
 
-        video {
-            width: 80%;
+        .aa{
+            position:absolute;
+        }
+
+        @media only screen and (min-device-width: 501px) {
+            video {
+                position: relative;
+                width: 60%;
+                left: 10;
+            }
+            .aa {
+                left: 10%;
+            }
+            .decoration {
+                    max-width: 60%;
+            }
+            .neirong .neirong-1 .neirong-1-1 {
+                max-width: 60%;
+            }
         }
 
         @media only screen and (max-device-width: 500px) {
             video {
                 width: 95%;
+                position: relative;
+                left: 9px;
             }
         }
 
@@ -43,21 +56,22 @@
             z-index: 1;
             top: 2%;
         }
-        .A {
-	        height: 46px;
+
+        .decoration {
             position: relative;
-            left: 14px;
+            margin-left: 14px;
+            top: -25px;
 	        box-shadow: 2px 2px 4px #EEEEEE;
 	        line-height: 46px;
         }
     </style>
-    
  </head>
  <body>
     <!-- 左上的标志-->
     <div class="img-logo">
         <img src="images/logo.png" >
     </div>
+    
     <!--导航-->
     <div class="header">
         <div class="hleft">
@@ -86,18 +100,19 @@
             </div>
         </div>
         <!--视频主页面-->
-        <div class="neirong">
-			<div class="neirong-1">
-				<h1>【Lex】B站历史上意义最重大的10部动画！</h1>
-				<p class="p-shang"><a href="#">动画</a>><a href="#">综合</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;2018-06-16 00:42:40  &nbsp;&nbsp;最高全站日排行1名</p>
-				<p class="p-xia">524.0万播放 · 9.9万弹幕&nbsp;&nbsp;&nbsp; <img src="img/neirong/jin.png"/>&nbsp;&nbsp;未经作者授权，禁止转载</p>
-                <div class="video-box">
-                    <video src="videos\A.mp4" controls></video>
-                </div>
-                <!--视频下面的功能-->
-                <div>
-                    <div class="A">
-                        <p><span>99</span>&nbsp;人正在看，3000+条实时弹幕</p>
+        <div>
+            <div class="aa">
+                <div class="neirong">
+                    <div class="neirong-1">
+                        <h1>【Lex】B站历史上意义最重大的10部动画！</h1>
+                        <p class="p-shang"><a href="#">动画</a>><a href="#">综合</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;2018-06-16 00:42:40  &nbsp;&nbsp;最高全站日排行1名</p>
+                        <p class="p-xia">524.0万播放 · 9.9万弹幕&nbsp;&nbsp;&nbsp; <img src="img/neirong/jin.png"/>&nbsp;&nbsp;未经作者授权，禁止转载</p>
+                        <div class="video-box">
+                            <video src="videos\A.mp4" controls></video>
+                        </div>
+                        <!--视频下面的功能-->
+                        <div class="decoration">
+                            <p><span>99</span>&nbsp;人正在看，3000+条实时弹幕</p>
                         </div>
                         <div class="neirong-1-1">
                             <ul>
@@ -110,21 +125,19 @@
                                             <span class="nr-biao">QQ</span>
                                             <span class="nr-biao"><span class="kongjian">QQ空间</span></span>
                                             <span class="nr-biao">贴吧</span>
-                                            <p>将视频贴到博客或论坛</p>
-                                            <span class="nr-t">视频地址</span>
-                                            <input type="text" value="iframe src=&quot//player.bilibili.com/player.html?aid=24972274&cid=42177257&page=1&quot scrolling=&quotno&quot border=&quot0&quot frameborder=&quotno&quot framespacing=&quot0&quot allowfullscreen=&quottrue&quot> </iframe>"/>
-                                            <input type="button" value="复制" />
                                         </div>
                                     </div>
                                 </li>
                             </ul>
-                        </div>
+                        </div>    
                     </div>
+                </div>
+                <div class="ShengMing">
+                    <p >&copy; 2023 SHENG</p>
+                </div>
             </div>
         </div>
-
-    <div>
-        <p class="ShengMing">&copy; 2023 SHENG</p>
+        
     </div>
  </body>
 </html>
