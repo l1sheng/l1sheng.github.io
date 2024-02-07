@@ -241,7 +241,9 @@ img {
 }
 
 /* Active link */
-
+.active-link{
+  color: var(--first-color);
+}
 
 /*=============== HOME ===============*/
 .home{
@@ -309,7 +311,7 @@ img {
 
 
 /*=============== ABOUT ===============*/
-.abou__container{
+.about__container{
   position: relative;
   row-gap: 3.5rem;
 }
@@ -341,7 +343,7 @@ img {
 }
 
 .about__snow-2{
-  right: -.75rem;
+  right: -.1rem;
   bottom: .5rem;
   animation: var(--animate-snow-2);
 }
@@ -363,16 +365,156 @@ img {
 }
 /*=============== SEND ===============*/
 
+.send__container{
+  position: relative;
+  grid-template-columns: 200px;
+  justify-content: center;
+  row-gap: 3rem;
+  padding-top:1.5rem ;
+}
 
+.send__card{
+  text-align: center;
+}
+
+.send__img{
+  width: 180px;
+  margin-bottom: .75rem;
+}
+
+.send__title{
+  font-size: var(--h3-font-size);
+  margin-bottom: .5rem;
+}
+
+.send__description{
+  font-size: var(--small-font-size);
+  padding-inline: 1.5rem;
+}
+
+.send__snow-1,
+.send__snow-2,
+.send__snow-3{
+  width: 50px;
+  position: absolute;
+}
+
+.send__snow-1{
+  left: 0;
+  top: 7rem;
+  animation: var(--animate-snow-1);
+}
+.send__snow-2{
+  top: 23rem;
+  right: 0;
+  animation: var(--animate-snow-2);
+}
+
+.send__snow-3{
+  bottom: 9rem;
+  left: 0;
+  animation: var(--animate-snow-1);
+}
 /*=============== CELEBRATE ===============*/
+.celebrate__container{
+  position: relative;
+  row-gap: 3.5rem;
+}
 
+.celebrate__data{
+  text-align: center;
+}
+
+.celebrate__description{
+  margin-bottom: 2rem;
+}
+
+.celebrate__img{
+  width: 320px;
+  justify-self: center;
+}
+
+.celebrate__snow-1,
+.celebrate__snow-2{
+  width: 50px;
+  position: absolute;
+}
+
+.celebrate__snow-1{
+  top: 1.5rem;
+  left: 1.5rem;
+  animation: var(--animate-snow-1);
+}
+
+.celebrate__snow-2{
+  top: 18rem;
+  right: 0;
+  animation: var(--animate-snow-2);
+}
 
 /*=============== FOOTER ===============*/
+.footer{
+  overflow: hidden;
+  text-align: center;
+}
 
+.footer__container{
+  position: relative;
+  padding-block: 4.5rem 2rem;
+  text-align: center;
+}
 
+.footer__logo,
+.footer__social-link,
+.footer__copy{
+  color: var(--white-color);
+}
+
+.footer__logo{
+  display: inline-block;
+  font-size: var(--h2-font-size);
+  font-family: var(--second-font);
+  margin-bottom: 1rem;
+}
+
+.footer__social{
+  display: flex;
+  justify-content: center;
+  column-gap: 1.5rem;
+}
+
+.footer__social-link{
+  font-size: 1.25rem;
+  transition: color .3s;
+}
+
+.footer__social-link:hover{
+  color: var(--first-color);
+}
+.footer__copy{
+  display: block;
+  margin-top: 2rem;
+  font-size: var(--smaller-font-size);
+}
+
+.footer__snow-1,
+.footer__snow-2{
+  position: absolute;
+}
 /*=============== SCROLL BAR ===============*/
+::-webkit-scrollbar{
+  width: .6rem;
+  border-radius: .5rem;
+  background-color: hsl(210, 8%, 15%);
+}
 
-
+::-webkit-scrollbar-thumb{
+  background-color: hsl(210,8%,25%);
+  border-radius: .5rem;
+}
+::-webkit-scrollbar-thumb:hover{
+  background-color: hsl(210,8%,35%);
+}
 /*=============== SCROLL UP ===============*/
 
 
@@ -381,9 +523,68 @@ img {
 
 /*=============== BREAKPOINTS ===============*/
 /* For medium devices */
+@media screen and (min-width:576px) {
+  .home__village{
+    width: 360px;
+  }
+  
+  .home__pine{
+    width: 330px;
+  }
 
+  .about__container,
+  .celebrate__container{
+    grid-template-columns: .6fr;
+    justify-content: center;
+  }
+}
+@media screen and (min-width:767px) {
+  .nav__toggle,
+  .nav__close,
+  .nav__img-1,
+  .nav__img-2{
+    display: none;
+  }
+  .nav__list{
+    flex-direction: row;
+    column-gap: 4rem;
+  }
+  .home{
+    height: 800px;
+  }
+  .home__village{
+    width: 460px;
+  }
+  .home__pine{
+    width: 400px;
+    bottom: 7rem;
+  }
+  .home__moon{
+    width: 450px;
+    bottom:12rem;
+  }
+  .home__trineo{
+    width: 350px;
+    bottom: 20rem;
+  }
 
+  .send__container{
+    grid-template-columns: repeat(2,200px);
+    column-gap: 5rem;
+  }
+}
 /* For large devices */
+@media screen and (min-width:1024px) {
+  .section{
+    padding-block: 7rem 3rem;
+  }
 
+  .home__title{
+    font-size: 4rem ;
+  }
+  .nav{
+    height: calc(var(--header-height)+1.5rem);
+  }
+}
 
 /* For 2K+ resolutions */
